@@ -162,7 +162,7 @@ button { cursor: pointer; }
 
 .hero-visual { position: relative; min-height: 650px; display: grid; place-items: center; }
 .hero-photo { position: relative; width: min(430px, 85%); aspect-ratio: .76; overflow: hidden; border-radius: 220px 220px 42px 42px; box-shadow: 0 45px 100px rgba(0,0,0,.36); border: 1px solid rgba(255,255,255,.18); }
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.03); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 46% center; transform: scale(1.03); }
 .photo-shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(2,10,20,.8), transparent 48%, rgba(3,14,27,.28)); }
 .photo-badge { position: absolute; left: 26px; bottom: 28px; display: grid; }
 .photo-badge span { color: rgba(255,255,255,.6); font-size: .68rem; text-transform: uppercase; letter-spacing: .15em; }
@@ -218,7 +218,9 @@ button { cursor: pointer; }
 .discipline-art { position: absolute; inset: 0; overflow: hidden; z-index: -1; }
 .football-art { background: linear-gradient(145deg, #0a57b5, #073267 70%); }
 .football-art::before { content: ""; position: absolute; width: 280px; height: 280px; right: -50px; top: -40px; border-radius: 50%; border: 28px solid rgba(255,255,255,.07); }
-.ball { position: absolute; right: 32px; top: 28px; font-size: 8.5rem; filter: grayscale(1); opacity: .22; transform: rotate(-14deg); }
+.discipline-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 35%; transition: transform .6s ease; }
+.discipline-card:hover .discipline-photo { transform: scale(1.04); }
+.football-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(3,16,36,.96) 0%, rgba(5,35,80,.72) 38%, rgba(10,87,181,.12) 72%, transparent 100%); }
 .field-line { position: absolute; border: 2px solid rgba(255,255,255,.12); border-radius: 50%; }
 .field-line-a { width: 360px; height: 360px; left: -190px; bottom: -130px; }
 .field-line-b { width: 140px; height: 140px; left: -75px; bottom: -20px; }
@@ -679,7 +681,7 @@ body { background: #eef2f6; }
 .sponsors-heading h2 em { color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.52); font-style: normal; }
 .sponsors-heading > p { margin: 0; color: rgba(255,255,255,.55); line-height: 1.85; font-size: .9rem; }
 .sponsor-level { font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .18em; color: rgba(255,255,255,.46); }
-.sponsor-main { position: relative; min-height: 420px; display: grid; place-items: center; align-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,.11); background: radial-gradient(circle at 50% 0, rgba(38,131,255,.2), transparent 48%), linear-gradient(130deg, #071a30, #030e1d); }
+.sponsor-main { position: relative; min-height: 340px; display: grid; place-items: center; align-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,.11); background: radial-gradient(circle at 50% 0, rgba(38,131,255,.2), transparent 48%), linear-gradient(130deg, #071a30, #030e1d); }
 .sponsor-main::before { content: ""; position: absolute; inset: 14px; border: 1px solid rgba(255,255,255,.06); pointer-events: none; }
 .sponsor-main .sponsor-level { position: absolute; left: 35px; top: 31px; }
 .sponsor-main > p { margin: 24px 0 0; color: rgba(255,255,255,.5); font-size: .75rem; letter-spacing: .08em; }
@@ -688,7 +690,7 @@ body { background: #eef2f6; }
 .fictional-logo strong { line-height: .8; letter-spacing: -.06em; }
 .fictional-logo span { width: 100%; text-align: center; text-transform: uppercase; letter-spacing: .27em; }
 .main-partner-logo { position: relative; z-index: 1; display: grid; place-items: center; }
-.main-partner-logo img { width: clamp(170px, 22vw, 250px); height: auto; filter: drop-shadow(0 18px 40px rgba(0,0,0,.35)); }
+.main-partner-logo img { width: clamp(110px, 11vw, 150px); height: auto; filter: drop-shadow(0 18px 40px rgba(0,0,0,.35)); }
 .sponsor-secondary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
 .sponsor-secondary { position: relative; min-height: 285px; display: grid; place-items: center; align-content: center; overflow: hidden; background: var(--blue); }
 .sponsor-secondary-red { background: #111b28; }
@@ -781,9 +783,9 @@ body { background: #eef2f6; }
   .membership { min-height: 680px; }
   .membership h2 { font-size: 4.1rem; }
   .sponsors-heading h2 { font-size: 3.8rem; }
-  .sponsor-main { min-height: 360px; padding: 70px 20px 40px; }
+  .sponsor-main { min-height: 300px; padding: 70px 20px 40px; }
   .sponsor-main > p { text-align: center; line-height: 1.6; }
-  .main-partner-logo img { width: 165px; }
+  .main-partner-logo img { width: 115px; }
   .sponsor-secondary-grid { grid-template-columns: 1fr; }
   .sponsor-secondary { min-height: 240px; }
   .logo-ruta strong, .logo-pulso strong { font-size: 2.8rem; }
