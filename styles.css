@@ -222,8 +222,8 @@ button { cursor: pointer; }
 .field-line { position: absolute; border: 2px solid rgba(255,255,255,.12); border-radius: 50%; }
 .field-line-a { width: 360px; height: 360px; left: -190px; bottom: -130px; }
 .field-line-b { width: 140px; height: 140px; left: -75px; bottom: -20px; }
-.hockey-art { background: linear-gradient(145deg, #c91a2c, #7b0d1b); }
-.hockey-art span, .kids-art span { position: absolute; right: -12px; top: 20px; font-size: 9rem; opacity: .17; filter: grayscale(1); }
+.senior-art { background: linear-gradient(145deg, #c91a2c, #7b0d1b); }
+.senior-art span, .kids-art span { position: absolute; right: -12px; top: 20px; font-size: 9rem; opacity: .17; filter: grayscale(1); }
 .kids-art { background: linear-gradient(145deg, #132f55, #08172c); }
 .kids-art span { color: var(--gold); filter: none; transform: rotate(18deg); }
 .discipline-content { position: absolute; left: 30px; right: 30px; bottom: 31px; }
@@ -480,7 +480,7 @@ button { cursor: pointer; }
 .art-result { background: linear-gradient(140deg, var(--blue), #052b58); }
 .art-keeper { background: var(--red); }
 .art-keeper span { font-size: 10rem; font-weight: 900; opacity: .2; }
-.art-hockey { background: linear-gradient(140deg, #101d2c, #263b53); font-size: 6rem; }
+.art-senior { background: linear-gradient(140deg, #101d2c, #263b53); font-size: 6rem; }
 .art-community { background: var(--blue); }
 .art-community span { font-size: 6rem; font-weight: 900; letter-spacing: -.1em; }
 .art-kids { color: var(--gold); background: #091a30; font-size: 7rem; }
