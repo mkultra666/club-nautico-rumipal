@@ -733,6 +733,8 @@ body { background: #eef2f6; }
   .hero-content { gap: 20px; }
   .hero h1 { font-size: clamp(4.4rem, 9vw, 7rem); }
   .hero-metrics { position: static; margin-top: 35px; }
+  .discipline-grid { grid-template-columns: 1fr 1fr; }
+  .discipline-featured { grid-column: span 2; }
 }
 @media (max-width: 860px) {
   :root { --container: min(100% - 36px, 720px); }
@@ -769,7 +771,12 @@ body { background: #eef2f6; }
   .hero-shield { width: 105px; }
   .section { padding: 95px 0; }
   .section-heading h2, .section-head-row h2, .contact-copy h2 { font-size: 3.35rem; }
-  .discipline-card { min-height: 440px; }
+  .discipline-grid { grid-template-columns: 1fr; }
+  .discipline-featured { grid-column: auto; }
+  .discipline-card { min-height: 380px; }
+  .discipline-content { left: 26px; right: 26px; bottom: 28px; }
+  .discipline-content h3 { font-size: 2.3rem; }
+  .discipline-content p { min-height: 0; }
   .match-card { padding: 18px; }
   .membership { min-height: 680px; }
   .membership h2 { font-size: 4.1rem; }
