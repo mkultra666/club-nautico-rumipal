@@ -687,10 +687,8 @@ body { background: #eef2f6; }
 .fictional-logo { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; color: white; }
 .fictional-logo strong { line-height: .8; letter-spacing: -.06em; }
 .fictional-logo span { width: 100%; text-align: center; text-transform: uppercase; letter-spacing: .27em; }
-.logo-altura { position: relative; gap: 17px; }
-.logo-altura i { width: 55px; height: 55px; border: 12px solid var(--red); border-bottom-color: transparent; transform: rotate(45deg); }
-.logo-altura strong { font-size: clamp(4rem, 8vw, 7.4rem); }
-.logo-altura span { margin-top: 14px; padding-left: 70px; font-size: .62rem; }
+.main-partner-logo { position: relative; z-index: 1; display: grid; place-items: center; }
+.main-partner-logo img { width: clamp(170px, 22vw, 250px); height: auto; filter: drop-shadow(0 18px 40px rgba(0,0,0,.35)); }
 .sponsor-secondary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
 .sponsor-secondary { position: relative; min-height: 285px; display: grid; place-items: center; align-content: center; overflow: hidden; background: var(--blue); }
 .sponsor-secondary-red { background: #111b28; }
@@ -776,10 +774,9 @@ body { background: #eef2f6; }
   .membership { min-height: 680px; }
   .membership h2 { font-size: 4.1rem; }
   .sponsors-heading h2 { font-size: 3.8rem; }
-  .sponsor-main { min-height: 330px; }
-  .logo-altura i { width: 34px; height: 34px; border-width: 8px; }
-  .logo-altura strong { font-size: 3.3rem; }
-  .logo-altura span { padding-left: 45px; }
+  .sponsor-main { min-height: 360px; padding: 70px 20px 40px; }
+  .sponsor-main > p { text-align: center; line-height: 1.6; }
+  .main-partner-logo img { width: 165px; }
   .sponsor-secondary-grid { grid-template-columns: 1fr; }
   .sponsor-secondary { min-height: 240px; }
   .logo-ruta strong, .logo-pulso strong { font-size: 2.8rem; }
