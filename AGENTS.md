@@ -17,6 +17,7 @@ Sitio estático: HTML + CSS + JS puro. Sin build, sin dependencias, sin framewor
 | `styles.css` | Todos los estilos (ver advertencia abajo) |
 | `script.js` | Loader, menú móvil, reveal on scroll, contadores, formulario demo |
 | `assets/` | Imágenes optimizadas que usa el sitio |
+| `comision/` | Generador de placas (EZpost web) para la Comisión Directiva. **Es compilado: no editar a mano** |
 
 ## Cómo verlo y publicar
 
@@ -54,6 +55,28 @@ Siempre probá a 390 px (celular), 768 px (tablet) y 1440 px (escritorio).
   - `agro1.png`: logo de Agroactiva, sponsor real. Va sobre fondo oscuro.
   - `cope1.png`: logo de la Cooperativa de Electricidad, Obras y Servicios Públicos Ltda. de Villa Rumipal, sponsor real.
   - `logo-nautico.png`: escudo del club.
+
+## Generador de placas (`/comision/`)
+
+- URL: https://mkultra666.github.io/club-nautico-rumipal/comision/. Hay un link discreto,
+  "Acceso comisión", en el pie de las tres páginas.
+- Es la versión web de **EZpost**, cuyo código fuente está en `D:\EZpost` (no en este repo).
+  `comision/` es la salida compilada. Para cambiarla, editá EZpost y regenerala:
+  ```
+  cd D:\EZpost
+  npm.cmd run build:web   # typecheck + build directo a D:\CLUB NAUTICO RUMIPAL\comision
+  ```
+  Después hacé commit y push de `comision/` en este repo.
+- Archivos web de EZpost: `web/index.html`, `vite.web.config.ts`, `src/web/` (clave,
+  escudo y sponsors reales, estilos para celular) y `src/platform/web.ts` (guarda en
+  IndexedDB y descarga los PNG).
+- Acceso: **clave compartida** que tiene el usuario. **Nunca la escribas en este repo**:
+  es público. En `src/web/AccessGate.tsx` (EZpost) solo está su hash, junto con las
+  instrucciones para cambiarla. Es una barrera simple porque el sitio es estático; no es un
+  login con servidor. Cada navegador recuerda la clave.
+- Solo exporta PNG de 1080×1350. El video y el MP4 quedan en la app de escritorio.
+- Lo que carga cada miembro (fotos, datos) queda en **su** navegador: no se comparte entre
+  miembros de la comisión.
 
 ## Datos reales vs. de ejemplo
 

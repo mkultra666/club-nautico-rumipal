@@ -901,3 +901,7 @@ body { background: #eef2f6; }
   .sponsor-cta { align-items: stretch; flex-direction: column; }
   .sponsor-cta .button { width: 100%; }
 }
+
+/* Acceso discreto al generador de placas de la comisión (/comision). */
+.footer-admin { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.footer-admin:hover { color: white; }

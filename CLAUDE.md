@@ -31,3 +31,8 @@ Está en `index.html`, sección `#abono-mensual`, debajo del próximo partido. S
 - El abono con sus beneficios quedó publicado y verificado en GitHub Pages en el commit `63d70ea` (**“Sumar beneficios al abono mensual”**).
 - Se revisó visualmente el abono a **390, 768 y 1440 px**, sin desbordes horizontales.
 - No hay una nueva modificación solicitada después de este resumen. Seguí las próximas indicaciones del usuario y mantené visibles las aclaraciones de cualquier contenido referencial hasta contar con datos confirmados.
+
+## Generador de placas para la comisión
+
+- `comision/` es EZpost compilado para la web (fuente en `D:\EZpost`, `npm.cmd run build:web`). Ver `AGENTS.md`.
+- Pedido del usuario: acceso con **clave compartida** (la tiene el usuario; no escribirla en el repo, que es público) y **solo PNG** en la web. El video y el MP4 quedan para la app de escritorio.
