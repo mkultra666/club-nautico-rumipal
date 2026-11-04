@@ -694,7 +694,10 @@ body { background: #eef2f6; }
 .season-pass-copy h2 { margin: 22px 0 26px; font-size: clamp(3.4rem, 5vw, 6.2rem); line-height: .95; letter-spacing: -.075em; }
 .season-pass-copy h2 em { color: var(--gold); font-style: normal; }
 .season-pass-copy > p:not(.season-pass-note) { max-width: 540px; color: rgba(255,255,255,.72); font-size: .98rem; line-height: 1.8; }
-.season-pass-offer { display: flex; align-items: center; gap: 30px; margin: 36px 0 30px; }
+.season-pass-benefits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 26px 0 0; padding: 0; list-style: none; }
+.season-pass-benefits li { display: flex; align-items: center; gap: 11px; min-height: 58px; padding: 12px 13px; border: 1px solid rgba(255,255,255,.15); border-radius: 5px; background: rgba(255,255,255,.035); font-size: .72rem; font-weight: 600; line-height: 1.45; }
+.season-pass-benefits li::before { content: "✦"; flex: none; color: var(--gold); font-size: 1.1rem; }
+.season-pass-offer { display: flex; align-items: center; gap: 30px; margin: 31px 0 30px; }
 .season-pass-price { display: flex; align-items: baseline; gap: 7px; white-space: nowrap; }
 .season-pass-price span { font-size: clamp(2.5rem, 4vw, 4.4rem); font-weight: 800; line-height: 1; letter-spacing: -.07em; }
 .season-pass-price small { color: rgba(255,255,255,.65); font-size: .9rem; }
@@ -863,6 +866,8 @@ body { background: #eef2f6; }
   .discipline-editorial-copy strong { font-size: clamp(2rem, 8vw, 2.8rem); }
   .match-card { padding: 18px; }
   .season-pass-copy h2 { font-size: clamp(3.15rem, 12vw, 4.6rem); }
+  .season-pass-benefits { grid-template-columns: 1fr; }
+  .season-pass-benefits li { min-height: 50px; }
   .season-pass-offer { align-items: flex-start; flex-direction: column; gap: 13px; margin: 30px 0 25px; }
   .season-pass-button { width: 100%; }
   .season-pass-layout { gap: 55px; }
