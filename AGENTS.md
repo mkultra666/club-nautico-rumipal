@@ -11,7 +11,7 @@ Sitio estático: HTML + CSS + JS puro. Sin build, sin dependencias, sin framewor
 
 | Archivo | Contenido |
 |---|---|
-| `index.html` | Home: hero, identidad, disciplinas, próximo partido, noticias, sponsors, socios, contacto |
+| `index.html` | Home: hero, identidad, disciplinas, próximo partido, abono mensual, noticias, sponsors, socios, contacto |
 | `noticias.html` | Nota destacada + grilla de noticias |
 | `marcas.html` | Página comercial de sponsors y paquetes |
 | `styles.css` | Todos los estilos (ver advertencia abajo) |
@@ -48,7 +48,7 @@ Siempre probá a 390 px (celular), 768 px (tablet) y 1440 px (escritorio).
   ```
 - En uso:
   - `portada-festejo.jpg`: foto del hero (festejo de gol).
-  - `futbol-primera.jpg`: fondo de la tarjeta Fútbol / Plantel superior.
+  - `futbol-primera.jpg`: imagen panorámica debajo de las tres disciplinas. No hay fotos de Senior ni de Inferiores todavía.
   - `cuerpo-tecnico.jpg`: solo en la noticia del nuevo DT.
   - `sponsor-rumipal.png`: logo del main partner, recortado, texto blanco sobre transparente. Va solo sobre fondo oscuro.
   - `agro1.png`: logo de Agroactiva, sponsor real. Va sobre fondo oscuro.
@@ -63,6 +63,8 @@ Siempre probá a 390 px (celular), 768 px (tablet) y 1440 px (escritorio).
 - La disciplina "Hockey" se reemplazó por **Fútbol Senior**.
 
 **Todavía son de ejemplo (pendiente de datos del club):**
+- El abono mensual de $18.000, el débito automático y sus beneficios en comercios y eventos son una propuesta referencial. El botón abre una consulta por correo; no procesa pagos. Las condiciones están por definir.
+- La fecha del próximo partido es referencial; el usuario pidió dejarla como está.
 - WhatsApp `5490000000000`, en el botón "Quiero asociarme".
 - Link de Instagram genérico (`https://instagram.com`).
 - Colaboradores de ejemplo **ficticios**: COSTA, La Ribera, HORIZONTE, NORTE, VALLE,
@@ -73,9 +75,8 @@ Siempre probá a 390 px (celular), 768 px (tablet) y 1440 px (escritorio).
 
 ## Pendientes conocidos
 
-- [ ] El próximo partido está desactualizado: dice 26/07/2026 vs Villa del Dique.
 - [ ] Las noticias son de julio 2026. Varios "Leer más" apuntan a `#`, y
-      `#nota-nuevo-dt` no existe.
+      `#nota-nuevo-dt` en `noticias.html` no existe (el enlace de la home a `#nuevo-dt` sí funciona).
 - [ ] Los filtros de `noticias.html` (Todas / Fútbol / Fútbol Senior / Institucional) no tienen JS.
 - [ ] La tarjeta del partido en el celular se lee, pero los horarios (Reserva/Primera) están mal ubicados.
 - [ ] El escudo del rival es un texto de reemplazo ("VD").
