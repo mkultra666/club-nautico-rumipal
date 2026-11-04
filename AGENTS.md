@@ -51,20 +51,23 @@ Siempre probá a 390 px (celular), 768 px (tablet) y 1440 px (escritorio).
   - `futbol-primera.jpg`: fondo de la tarjeta Fútbol / Plantel superior.
   - `cuerpo-tecnico.jpg`: solo en la noticia del nuevo DT.
   - `sponsor-rumipal.png`: logo del main partner, recortado, texto blanco sobre transparente. Va solo sobre fondo oscuro.
+  - `agro1.png`: logo de Agroactiva, sponsor real. Va sobre fondo oscuro.
+  - `cope1.png`: logo de la Cooperativa de Electricidad, Obras y Servicios Públicos Ltda. de Villa Rumipal, sponsor real.
   - `logo-nautico.png`: escudo del club.
 
 ## Datos reales vs. de ejemplo
 
 **Reales:**
 - Main partner: **Gobierno Municipal de Villa Rumipal**.
+- Sponsors ubicados debajo del main partner: **Agroactiva** y **Cooperativa de Electricidad, Obras y Servicios Públicos Ltda. de Villa Rumipal**.
 - La disciplina "Hockey" se reemplazó por **Fútbol Senior**.
 
 **Todavía son de ejemplo (pendiente de datos del club):**
 - WhatsApp `5490000000000`, en el botón "Quiero asociarme".
 - Link de Instagram genérico (`https://instagram.com`).
-- Sponsors secundarios **ficticios**: RUTA 5, PULSO, COSTA, La Ribera, HORIZONTE,
-  NORTE, VALLE, BYTE, SIERRAS. Hay un aviso en la página que lo aclara. Si se cargan
-  marcas reales, actualizá ese aviso.
+- Colaboradores de ejemplo **ficticios**: COSTA, La Ribera, HORIZONTE, NORTE, VALLE,
+  BYTE y SIERRAS. Hay un aviso en la home que lo aclara. Si se cargan marcas reales,
+  actualizá ese aviso.
 - El formulario de contacto no envía nada (solo muestra un mensaje en `script.js`).
   Falta conectarlo a Formspree, EmailJS o similar.
 
